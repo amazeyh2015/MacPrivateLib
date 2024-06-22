@@ -37,7 +37,7 @@ const char * (*CSSourceInfoGetFilename)(CSSourceInfoRef sourceInfo);
 const char * (*CSSourceInfoGetPath)(CSSourceInfoRef sourceInfo);
 uint32_t (*CSSourceInfoGetLineNumber)(CSSourceInfoRef sourceInfo);
 
-void openCoreSymbolication() {
+void openCoreSymbolication(void) {
     const char *path = "/System/Library/PrivateFrameworks/CoreSymbolication.framework/Versions/A/CoreSymbolication";
     openCoreSymbolicationAt(path);
 }

@@ -57,5 +57,5 @@ extern const char * (*CSSourceInfoGetFilename)(CSSourceInfoRef sourceInfo);
 extern const char * (*CSSourceInfoGetPath)(CSSourceInfoRef sourceInfo);
 extern uint32_t (*CSSourceInfoGetLineNumber)(CSSourceInfoRef sourceInfo);
 
-extern void openCoreSymbolication();
+extern void openCoreSymbolication(void);
 extern void openCoreSymbolicationAt(const char *path);
