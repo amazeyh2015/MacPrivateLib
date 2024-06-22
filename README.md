@@ -1,2 +1,2 @@
 # MacPrivateLib
-A tool for use some private libraries in macOS or Xcode
+A tool for use some macOS private libraries
