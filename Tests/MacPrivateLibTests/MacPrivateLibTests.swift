@@ -33,5 +33,27 @@ final class MacPrivateLibTests: XCTestCase {
         XCTAssertNotNil(CSSourceInfoGetFilename)
         XCTAssertNotNil(CSSourceInfoGetPath)
         XCTAssertNotNil(CSSourceInfoGetLineNumber)
+        XCTAssertNotNil(CSSourceInfoGetColumn)
+    }
+    
+    func testMobileDevice() throws {
+        openMobileDevice()
+        
+        XCTAssertNotNil(AMDeviceNotificationSubscribe)
+        XCTAssertNotNil(AMDeviceNotificationSubscribeWithOptions)
+        XCTAssertNotNil(AMDeviceNotificationUnsubscribe)
+        XCTAssertNotNil(AMDeviceCopyDeviceIdentifier)
+        XCTAssertNotNil(AMDeviceCopyValue)
+        XCTAssertNotNil(AMDeviceGetInterfaceType)
+        XCTAssertNotNil(AMDeviceConnect)
+        XCTAssertNotNil(AMDeviceDisconnect)
+        XCTAssertNotNil(AMDeviceIsPaired)
+        XCTAssertNotNil(AMDeviceStartSession)
+        XCTAssertNotNil(AMDeviceStopSession)
+        XCTAssertNotNil(AMDeviceSecureStartService)
+        XCTAssertNotNil(AMDServiceConnectionGetSocket)
+        XCTAssertNotNil(AMDServiceConnectionSend)
+        XCTAssertNotNil(AMDServiceConnectionReceive)
+        XCTAssertNotNil(AMDServiceConnectionInvalidate)
     }
 }

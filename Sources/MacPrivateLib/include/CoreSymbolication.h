@@ -56,6 +56,7 @@ extern const char * (*CSRegionGetName)(CSRegionRef region);
 extern const char * (*CSSourceInfoGetFilename)(CSSourceInfoRef sourceInfo);
 extern const char * (*CSSourceInfoGetPath)(CSSourceInfoRef sourceInfo);
 extern uint32_t (*CSSourceInfoGetLineNumber)(CSSourceInfoRef sourceInfo);
+extern uint32_t (*CSSourceInfoGetColumn)(CSSourceInfoRef sourceInfo);
 
 extern void openCoreSymbolication(void);
 extern void openCoreSymbolicationAt(const char *path);
